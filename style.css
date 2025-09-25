@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', 'Comic Neue', 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #3e1313; /*color for font*/
+  
+  background-image: url('homeimages/vintagebackground3.jpeg');
+  background-size: cover;            
+  background-repeat: no-repeat;       
+  background-position: center center; 
+  background-attachment: fixed; 
+}
+
+header {
+  background-color: #764032; 
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+
+
+nav a:hover {
+  background-color: #964630;
+}
+
+
+ @media (max-width: 600px) {
+  /* .text-container {
+    grid-column: span 1;
+  } */
+} 
+
+
+.image-container {
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  
+  
+}
+
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  
+}
+
+.dancecat{
+  width: 150px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  transform: translateY(420px) translateX(-50px);
+  z-index: 2;
+}
+
+
+.whitecat{
+  width: 250px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  transform: translateY(-450px) translateX(240px);
+  z-index: 2;
+}
+
+.yellowcat{
+  width: 300px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transform: translateY(100px);
+  z-index: 0;
+}
+
+.scarecat{
+  width: 350px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  transform: translateY(100px);
+  z-index: -1;
+}
+
+.sadcat{
+  width: 300px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  transform: translateY(300px)translateX(100px);
+  z-index: 0;
+}
+
+.letter{
+  width: 500px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  transform: translateX(50px) translateY(20px);
+  z-index: 1;
+}
+
+.yellowstamp{
+  width: 200px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  transform: translateY(-100px) translateX(170px);
+  z-index: 3;
+}
+
+.graystamp{
+  width: 200px;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  transform: translateX(-100px)translateY(200px);
+  z-index: 3;
+}
+
+.bluestamp{
+  width: 200px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  transform: translateY(-150px) rotate(10deg);
+  z-index: -1;
+}
+
+
+.flowerwhite{
+  width: 300px;
+  grid-column: 3/5;
+  grid-row: 1/2;
+  transform: translateY(30px) translateX(80px);
+  z-index: 1;
+}
+
+.roses{
+  width: 450px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  transform: translateY(-250px);
+  z-index: 1;
+}
+
+.popocat{
+  width: 300px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  transform: translateX(30px) translateY(330px);
+  z-index: 2;
+} 
+
+.doge{
+  width: 400px;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  transform:rotate(10deg) translateY(-350px);
+  z-index: 3;
+}
+
+.doge img {
+  transition: transform 0.4s ease;
+}
+
+.doge:hover img {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.journal{
+  width: 600px;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  transform:translateX(-10px)translateY(-50px);
+  z-index: 1;
+}
+
+.sausage{
+  width: 150px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  transform: translateY(200px)translateX(-150px);
+  z-index: 2;
+} 
+
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.sausage img {
+  animation: rotateImage 1s linear infinite;
+  transition: transform 0.4s ease;
+}
+
+.sausage:hover img {
+  transform: scale(1.1) rotate(360deg);
+  cursor: pointer;
+}
+
+.happycat{
+  width: 300px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  transform:translateY(-250px);
+  z-index: 3;
+} 
+
+.breakfast{
+  width: 450px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  transform: translateY(-200px)translateX(100px);
+  z-index: 2;
+} 
+
+.cake{
+  width: 450px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  transform: translateY(-500px)translateX(-200px);
+  z-index: 2;
+} 
+
+.toast{
+  width: 350px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  z-index: 4;
+} 
+
+.toast img {
+  transition: transform 0.4s ease;
+}
+
+.toast:hover img {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.croissant{
+  width: 300px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  transform:  translateX(180px) translateY(-650px);
+  z-index: 3;
+} 
+
+
+.pusheen{
+  width: 250px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  transform:  translateX(250px) translateY(400px);
+  z-index: 3;
+} 
+
+.skylake{
+  width: 600px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  transform:  translateX(50px) translateY(10px);
+  z-index: 1;
+} 
+
+.travelcollage{
+  width: 400px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  transform:translateY(40px);
+  z-index: 1;
+} 
+
+.houses{
+  width: 300px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  transform: rotate(25deg) translateX(190px) translateY(10px);
+  z-index: 1;
+} 
+
+.tree{
+  width: 350px;
+  grid-column: 2/3;
+  grid-row: 4/6;
+  transform: translateX(150px) translateY(200px);
+  z-index: 1;
+} 
+
+.tree img {
+  transition: transform 0.4s ease;
+}
+
+.tree:hover img {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.houseflower{
+  width: 400px;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  transform: translateX(290px) translateY(345px);
+  z-index: 0;
+} 
+
+.corgi1{
+  width: 250px;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  transform: rotate(10deg) translateY(-350px)translateX(-50px);
+  z-index: 0;
+} 
+
+.corgi2{
+  width: 350px;
+  grid-column: 3/4;
+  grid-row: 5/6;
+  transform: translateY(150px)translateX(0px);
+  z-index: 0;
+} 
+
+.pusheen2{
+  width: 230px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  transform: translateY(-250px)translateX(-80px);
+  z-index: 1;
+} 
+
+
+
+
+
+
+
+
+
+
